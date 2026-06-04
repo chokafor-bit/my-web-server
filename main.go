@@ -16,7 +16,7 @@ func HomePage(w http.ResponseWriter, res *http.Request) {
 	w.Header().Set("content-type", "application/json")
 
 	data := UserMessage{
-		Message: "welcome to simple http server in go, JSON data!",
+		Message: "welcome to http server in go, JSON data!",
 		Status:  200,
 	}
 	json.NewEncoder(w).Encode(data)
